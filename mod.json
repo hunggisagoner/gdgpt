@@ -1,0 +1,49 @@
+{
+    "geode": "5.4.0",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "hunggisagoner.gd-gpt",
+    "name": "GD GPT",
+    "version": "v1.0.0",
+    "developer": "hunggisagoner",
+    "description": "In-game AI assistant for GD.",
+    "dependencies": {
+        "geode.node-ids": ">=v1.20.0"
+    },
+    "resources": {
+        "sprites": [
+            "resources/*.png"
+        ]
+    },
+    "tags": [
+        "utility",
+        "editor",
+        "enhancement"
+    ],
+    "links": {
+        "source": "https://github.com/hunggisagoner/gdgpt"
+    },
+    "settings": {
+        "api-key": {
+            "type": "string",
+            "name": "Gemini API Key",
+            "description": "Enter your Gemini API key to start chatting.",
+            "default": ""
+        },
+        "save-chat": {
+            "type": "bool",
+            "name": "Save Chat",
+            "description": "When ON, chat is saved permanently. When OFF, new messages won't be saved.",
+            "default": true
+        },
+        "clear-chat": {
+            "type": "custom:clear-chat",
+            "name": "Clear Chat History",
+            "description": "Click this button to permanently delete your chat history."
+        }
+    }
+}
